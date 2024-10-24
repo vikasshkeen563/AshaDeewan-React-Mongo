@@ -1,0 +1,47 @@
+.carousel {
+    overflow: hidden;
+    position: relative;
+}
+
+.carousel-track {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.card {
+    min-width: 300px; /* Set a minimum width for each card */
+    margin-right: 20px; /* Space between cards */
+    box-sizing: border-box; /* Include padding and border in element's total width */
+    border: none; /* Remove any borders */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center content */
+}
+
+.card__img {
+    width: 100%; /* Full width of the card */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.card__info {
+    text-align: center; /* Center text */
+}
+
+.indicators {
+    display: flex;
+    justify-content: center; /* Center the indicators */
+    margin-top: 10px;
+}
+
+.indicator {
+    width: 10px;
+    height: 10px;
+    background: gray;
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.indicator.active {
+    background: black; /* Change color for the active indicator */
+}
